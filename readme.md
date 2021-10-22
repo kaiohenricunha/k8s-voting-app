@@ -2,7 +2,7 @@
 
 - 1 - Set the cluster up
 
-- 2 - Verify if voting-k8s dir is there. If not, do: git clone https://github.com/kaiohenricunha/votingapp-k8s.git
+- 2 - Verify if voting-k8s dir is in the environment. If not, do: git clone https://github.com/kaiohenricunha/k8s-voting-app
 
 - 3 - Explain K8s high-level architecture
 
