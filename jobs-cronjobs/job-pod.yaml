@@ -1,0 +1,31 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: math-add-pod
+spec:
+  completions: 3
+  #parallelism: 3
+  template:
+    spec:
+      containers:
+        - name: math-add
+          image: ubuntu
+          #this calculation is performed inside
+          #the container, on the command-line
+          command: ['expr', '3', '+', '10']
+      restartPolicy: Never
+
+
+# apiVersion: batch/v1
+# kind: Job
+# metadata:
+#   name: throw-dice-job
+# spec:
+#   completions: 3
+#   backoffLimit: 25 # This is so the job does not quit before it succeeds.
+#   template:
+#     spec:
+#       containers:
+#       - name: throw-dice
+#         image: kodekloud/throw-dice
+#       restartPolicy: Never
