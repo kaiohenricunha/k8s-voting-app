@@ -1,4 +1,5 @@
 # Before the demo, verify steps 1 and 2
+## Slides should be referecend on all steps
 
 - 1 - Set the cluster up
 
